@@ -12,7 +12,7 @@ if (row === undefined) {
 
 
     const logdata =   ` CREATE TABLE accesslog ( 
-        remoteaddr TEXT, 
+        remote_addr TEXT, 
         remoteuser TEXT, 
         time TEXT, 
         method TEXT, 
@@ -25,7 +25,7 @@ if (row === undefined) {
     ); `
     const sqlInit = 
     logdb.exec(logdata)
-    
+
 } else {
     console.log('Log database exists.')
 }
