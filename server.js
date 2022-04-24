@@ -23,7 +23,7 @@ app.use(morgan('combined', { stream: accessLog}))
 
 app.use( (req, res, next) => {
     let logdata = {
-        remoteaddr: req.ip,
+        remote_addr: req.ip,
         remoteuser: req.user,
         time: Date.now(),
         method: req.method,
